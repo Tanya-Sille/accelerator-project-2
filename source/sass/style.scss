@@ -2,3 +2,27 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+@import "vendor/swiper.scss";
+
+/* GLOBAL */
+@import "./global/variables.scss";
+// @import "./global/mixins.scss";
+@import "./global/fonts.scss";
+@import "./global/global.scss";
+@import "./global/typography.scss";
+
+// /* BLOCKS */
+@import "./blocks/button.scss";
+@import "./blocks/links.scss";
+@import "./blocks/header.scss";
+// @import "./blocks/hero.scss";
+// @import "./blocks/promo.scss";
+// @import "./blocks/about.scss";
+// @import "./blocks/price.scss";
+// @import "./blocks/games.scss";
+// @import "./blocks/jury.scss";
+// @import "./blocks/faq.scss";
+// @import "./blocks/form-contacts.scss";
+// @import "./blocks/form.scss";
+// @import "./blocks/contacts.scss";
+@import "./blocks/footer.scss";

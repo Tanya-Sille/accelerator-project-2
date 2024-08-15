@@ -1,0 +1,22 @@
+.links {
+  color: $base-text-color;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    color: rgba($additional-color, 0.1);
+  }
+
+  &:active {
+    color: $active-color;
+  }
+
+  &:focus-visible {
+    outline: none;
+    color: $additional-color;
+  }
+
+  &:disabled {
+    color: $disabled-color;
+  }
+}

@@ -1,0 +1,62 @@
+.title {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-size: 22px;
+  line-height: 1;
+  font-weight: 800;
+
+  &::before {
+    content: attr(data-title);
+    position: absolute;
+    top: -16px;
+    left: 0;
+    width: max-content;
+    height: 26px;
+    font-size: 26px;
+    line-height: 1;
+    color: rgba($base-text-color, 0.03);
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+
+    &::before {
+      top: -20px;
+      height: 40px;
+      font-size: 40px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 35px;
+
+    &::before {
+      top: -19px;
+      height: 55px;
+      font-size: 55px;
+    }
+  }
+}
+
+.regular-text {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.small-text {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

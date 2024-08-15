@@ -1,0 +1,42 @@
+.button {
+  position: relative;
+  padding: 20px;
+  background-color: $additional-color;
+  color: $base-color;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $base-color;
+    color: $active-color;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border: 1px solid $active-color;
+      border-radius: 1px;
+      width: calc(100% + 1px);
+      height: calc(100% + 1px);
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &:active {
+    background-color: $active-color;
+  }
+
+  &:focus-visible {
+    outline: none;
+    background-color: $base-color;
+    color: $active-color;
+  }
+
+  &:disabled {
+    background-color: $disabled-color;
+  }
+}
