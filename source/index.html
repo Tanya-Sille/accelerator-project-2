@@ -25,37 +25,37 @@
     </svg> -->
     <!-- примеры требуемых атрибутов data-test="*" -->
     <header class="header container" data-test="header">
+      <div class="header__logo">
+        <svg alt="Логотип Lifetour." width="142" height="42">
+          <use href="/__spritemap#sprite-logo-white"></use>
+        </svg>
+      </div>
       <nav class="header__navigation header__navigation--hidden">
-        <div class="header__logo">
-          <svg alt="Логотип Lifetour." width="142" height="42">
-            <use href="/__spritemap#sprite-logo-white"></use>
-          </svg>
-        </div>
         <ul class="header__navigation-list">
           <li class="header__navigation-item">
-            <a class="header__navigation-link" href="#tours">Туры</a>
+            <a class="header__navigation-link header__link" href="#tours">Туры</a>
           </li>
           <li class="header__navigation-item">
-            <a class="header__navigation-link" href="#training">Обучение</a>
+            <a class="header__navigation-link header__link" href="#training">Обучение</a>
           </li>
           <li class="header__navigation-item">
-            <a class="header__navigation-link" href="#about">О нас</a>
+            <a class="header__navigation-link header__link" href="#about">О нас</a>
           </li>
           <li class="header__navigation-item">
-            <a class="header__navigation-link" href="#reviews">Отзывы</a>
+            <a class="header__navigation-link header__link" href="#reviews">Отзывы</a>
           </li>
           <li class="header__navigation-item">
-            <a class="header__navigation-link" href="#photos">Фотографии</a>
+            <a class="header__navigation-link header__link" href="#photos">Фотографии</a>
           </li>
           <li class="header__navigation-item">
-            <a class="header__navigation-link" href="#contacts">Контакты</a>
+            <a class="header__navigation-link header__link" href="#contacts">Контакты</a>
           </li>
         </ul>
         <button class="header__navigation-toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </nav>
-      <a class="header__phone" href="tel:88000000000">8 800 000-00-00</a>
+      <a class="header__phone header__link" href="tel:88000000000">8 800 000-00-00</a>
     </header>
 
     <main>

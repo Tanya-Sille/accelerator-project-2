@@ -43,7 +43,7 @@ img {
 
 .container {
   margin: 0 auto;
-  padding: 0 $mobile-padding;
+  padding: 20px $mobile-padding;
   width: $mobile-width;
 
   @media (min-width: $tablet-width) {
@@ -64,4 +64,8 @@ img {
       white-space: pre;
     }
   }
+}
+
+.menu-open {
+  overflow: hidden;
 }
